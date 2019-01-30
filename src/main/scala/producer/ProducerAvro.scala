@@ -7,8 +7,9 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import utills.ConfigurationService
 
 object ProducerAvro {
-  private val producer: KafkaProducer[String, AnyRef] = ConfigurationService.kafkaProducer()
   implicit private val valueFormatter: RecordFormat[CreditCards] = RecordFormat[CreditCards]
+
+  private val producer: KafkaProducer[String, AnyRef] = ConfigurationService.kafkaProducer()
   private var commandRecord: ProducerRecord[String, AnyRef] = _
   private var value: GenericRecord = _
   private var key: String = _
