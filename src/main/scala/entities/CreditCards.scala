@@ -1,8 +1,8 @@
 package entities
 
-case class CreditCards (CreditCardID: Int,
-                        CardType: String,
-                        CardNumber: String,
-                        ExpMonth: Byte,
-                        ExpYear: Short,
-                        ModifiedDate: String)
+case class CreditCards (creditCardID: Int,
+                        cardType: String,
+                        cardNumber: String,
+                        expMonth: Byte,
+                        expYear: Short,
+                        modifiedDate: String)

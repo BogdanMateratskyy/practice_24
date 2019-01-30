@@ -10,7 +10,7 @@ val dependencies = Seq (
   "org.apache.avro" % "avro" % "1.8.2",
   "org.apache.avro" % "avro-maven-plugin" % "1.8.2",
   "mysql" % "mysql-connector-java" % "5.1.44",
-  "com.sksamuel.avro4s" %% "avro4s-core" % "1.6.4",
+  "com.sksamuel.avro4s" %% "avro4s-core" % "2.0.4",
   "commons-beanutils" % "commons-beanutils" % "1.9.3",
   "com.typesafe.play" %% "play-json" % "2.6.8",
   "commons-cli" % "commons-cli" % "1.4",
