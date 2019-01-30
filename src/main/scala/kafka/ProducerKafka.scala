@@ -1,4 +1,4 @@
-package producer
+package kafka
 
 import java.util.{Date, Properties}
 
@@ -6,10 +6,10 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 import scala.util.Random
 
-object ProducerKafka extends App {
-  val events = args(0).toInt
-  val topic = args(1)
-  val brokers = args(2)
+object ProducerKafka {
+  val events = 2
+  val topic = "test"
+  val brokers = "localhost:9092"
   val rnd = new Random()
   val props = new Properties()
   props.put("bootstrap.servers", brokers)
