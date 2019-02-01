@@ -23,7 +23,7 @@ object ProducerAvro {
 
   def sendCreditCardData (creditCard: CreditCards): Unit = {
     value = valueFormatter.to(creditCard)
-    key = creditCard.creditCardID.toString
+    key = creditCard.cardType
     sendRecIntoTopic(key, value)
     System.out.println("Record was send to topic")
     Thread.sleep(ConfigurationService.producerSleepTime)

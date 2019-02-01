@@ -62,7 +62,7 @@ object ConfigurationService {
    new KafkaProducer[String, AnyRef](props)
   }
 
-  def mySqlConn(): Connection ={
+  def mySqlConn(): Connection = {
     val mySqlProps: Properties = new Properties()
 
     mySqlProps.put("user", mySqlUser)
